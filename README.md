@@ -30,8 +30,8 @@ You can download the PDF and Epub version of this repository from the latest run
 |4  | [What is the difference between Element and Component?](#what-is-the-difference-between-element-and-component)                                                                                                                  |
 |5  | [How to create components in React?](#how-to-create-components-in-react)                                                                                                                                                        |
 |6  | [When to use a Class Component over a Function Component? +](#when-to-use-a-class-component-over-a-function-component)                                                                                                       |
-|7  | [What are Pure Components?](#what-are-pure-components)                                                                                                                                                                          |
-|8  | [What is state in React?](#what-is-state-in-react)                                                                                                                                                                              |
+|7  | [What are Pure Components? +](#what-are-pure-components)                                                                                                                                                                          |
+|8  | [What is state in React? +](#what-is-state-in-react)                                                                                                                                                                              |
 |9  | [What are props in React?](#what-are-props-in-react)                                                                                                                                                                            |
 |10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props)                                                                                                                              |
 |11 | [Why should we not update the state directly?](#why-should-we-not-update-the-state-directly)                                                                                                                                    |
@@ -489,21 +489,21 @@ You can download the PDF and Epub version of this repository from the latest run
 
    Когда использовать классовый компонент, а когда функциональный?
 
-   Если компоненту требуется *состояние или методы жизненного цикла*, то используйте компонент класса, в противном случае используйте компонент функции.
+   Если компоненту требуется *состояние или методы жизненного цикла*, то используйте компонент класса, в противном случае используйте классовый компонент.
    *Однако, начиная с React 16.8 с добавлением Hooks, вы можете использовать состояние, методы жизненного цикла и другие возможности, которые были доступны только в компоненте класса, прямо в функциональном компоненте.*
    *Таким образом, всегда рекомендуется использовать функциональные компоненты, если только вам не нужна функциональность React, эквивалент которой в функциональном компоненте пока отсутствует, например, Error Boundaries.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-7. ### + Что такое Pure Components?
+7. ### What are Pure Components?
 
    *`React.PureComponent`* точно такой же, как *`React.Component`*, за исключением того, что он обрабатывает метод `shouldComponentUpdate()` за вас. Когда пропсы или состояние изменяются, *PureComponent* будет выполнять поверхностное сравнение как пропсов, так и состояния. В свою очередь, *Component* не будет сравнивать текущие пропсы и состояние с новыми. Следовательно, обычный компонент будет перерисовываться по умолчанию всякий раз, когда вызывается `shouldComponentUpdate`.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-8. ### + Что такое состояние (стейт) React?
+8. ### What is state in React?
 
     *Состояние* компонента - это объект, содержащий некоторую информацию, которая может меняться в течение жизни компонента. Мы всегда должны стараться сделать наше состояние как можно более простым и минимизировать количество компонентов с состоянием.
 
@@ -539,7 +539,7 @@ You can download the PDF and Epub version of this repository from the latest run
     
 9. ### What are props in React?
 
-    Что такое props в React?
+    **Что такое props в React?**
 
     *Props* - это входные данные компонентов. Это отдельные значения или объекты, содержащие набор значений, которые передаются компонентам при создании с использованием соглашения об именовании, аналогичного атрибутам HTML-тегов. Они представляют собой данные, передаваемые от родительского компонента к дочернему компоненту.
 
