@@ -32,7 +32,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |6  | [When to use a Class Component over a Function Component? +](#when-to-use-a-class-component-over-a-function-component)                                                                                                       |
 |7  | [What are Pure Components? +](#what-are-pure-components)                                                                                                                                                                          |
 |8  | [What is state in React? +](#what-is-state-in-react)                                                                                                                                                                              |
-|9  | [What are props in React?](#what-are-props-in-react)                                                                                                                                                                            |
+|9  | [What are props in React? +](#what-are-props-in-react)                                                                                                                                                                            |
 |10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props)                                                                                                                              |
 |11 | [Why should we not update the state directly?](#why-should-we-not-update-the-state-directly)                                                                                                                                    |
 |12 | [What is the purpose of callback function as an argument of setState()?](#what-is-the-purpose-of-callback-function-as-an-argument-of-setstate)                                                                                  
@@ -178,17 +178,17 @@ You can download the PDF and Epub version of this repository from the latest run
 |150| [What are the advantages of Jest over Jasmine?](#what-are-the-advantages-of-jest-over-jasmine)                                                                                                                                  |
 |151| [Give a simple example of Jest test case](#give-a-simple-example-of-jest-test-case)                                                                                                                                             |
 |   | **React Redux**                                                                                                                                                                                                                 |
-|152| [What is Flux?](#what-is-flux)                                                                                                                                                                                                  |
-|153| [What is Redux?](#what-is-redux)                                                                                                                                                                                                |
-|154| [What are the core principles of Redux?](#what-are-the-core-principles-of-redux)                                                                                                                                                |
-|155| [What are the downsides of Redux compared to Flux?](#what-are-the-downsides-of-redux-compared-to-flux)                                                                                                                          |
-|156| [What is the difference between mapStateToProps() and mapDispatchToProps()?](#what-is-the-difference-between-mapstatetoprops-and-mapdispatchtoprops)                                                                            |
-|157| [Can I dispatch an action in reducer?](#can-i-dispatch-an-action-in-reducer)                                                                                                                                                    |
-|158| [How to access Redux store outside a component?](#how-to-access-redux-store-outside-a-component)                                                                                                                                |
+|152| [What is Flux? +](#what-is-flux)                                                                                                                                                                                                  |
+|153| [What is Redux? +](#what-is-redux)                                                                                                                                                                                                |
+|154| [What are the core principles of Redux? +](#what-are-the-core-principles-of-redux)                                                                                                                                                |
+|155| [What are the downsides of Redux compared to Flux? +](#what-are-the-downsides-of-redux-compared-to-flux)                                                                                                                          |
+|156| [What is the difference between mapStateToProps() and mapDispatchToProps()? +](#what-is-the-difference-between-mapstatetoprops-and-mapdispatchtoprops)                                                                            |
+|157| [Can I dispatch an action in reducer? +](#can-i-dispatch-an-action-in-reducer)                                                                                                                                                    |
+|158| [How to access Redux store outside a component? +](#how-to-access-redux-store-outside-a-component)                                                                                                                                |
 |159| [What are the drawbacks of MVW pattern](#what-are-the-drawbacks-of-mvw-pattern)                                                                                                                                                 |
-|160| [Are there any similarities between Redux and RxJS?](#are-there-any-similarities-between-redux-and-rxjs)                                                                                                                        |
-|161| [How to dispatch an action on load?](#how-to-dispatch-an-action-on-load)                                                                                                                                                        |
-|162| [How to use connect from React Redux?](#how-to-use-connect-from-react-redux)                                                                                                                                                    |
+|160| [Are there any similarities between Redux and RxJS? +](#are-there-any-similarities-between-redux-and-rxjs)                                                                                                                        |
+|161| [How to dispatch an action on load? +](#how-to-dispatch-an-action-on-load)                                                                                                                                                        |
+|162| [How to use connect from React Redux? +](#how-to-use-connect-from-react-redux)                                                                                                                                                    |
 |163| [How to reset state in Redux?](#how-to-reset-state-in-redux)                                                                                                                                                                    |
 |164| [Whats the purpose of at symbol in the redux connect decorator?](#whats-the-purpose-of-at-symbol-in-the-redux-connect-decorator)                                                                                                |
 |165| [What is the difference between React context and React Redux?](#what-is-the-difference-between-react-context-and-react-redux)                                                                                                  |
@@ -204,7 +204,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |175| [What is redux-saga?](#what-is-redux-saga)                                                                                                                                                                                      |
 |176| [What is the mental model of redux-saga?](#what-is-the-mental-model-of-redux-saga)                                                                                                                                              |
 |177| [What are the differences between call and put in redux-saga](#what-are-the-differences-between-call-and-put-in-redux-saga)                                                                                                     |
-|178| [What is Redux Thunk?](#what-is-redux-thunk)                                                                                                                                                                                    |
+|178| [What is Redux Thunk? +](#what-is-redux-thunk)                                                                                                                                                                                    |
 |179| [What are the differences between redux-saga and redux-thunk](#what-are-the-differences-between-redux-saga-and-redux-thunk)                                                                                                     |
 |180| [What is Redux DevTools?](#what-is-redux-devtools)                                                                                                                                                                              |
 |181| [What are the features of Redux DevTools?](#what-are-the-features-of-redux-devtools)                                                                                                                                            |
@@ -3598,9 +3598,11 @@ You can download the PDF and Epub version of this repository from the latest run
     
 152. ### What is flux?
 
-     *Flux* is an *application design paradigm* used as a replacement for the more traditional MVC pattern. It is not a framework or a library but a new kind of architecture that complements React and the concept of Unidirectional Data Flow. Facebook uses this pattern internally when working with React.
+     **Что такое flux?**
 
-     The workflow between dispatcher, stores and views components with distinct inputs and outputs as follows:
+     *Flux* - это *парадигма проектирования приложений*, используемая в качестве замены более традиционного паттерна MVC. Это не фреймворк или библиотека, а новый вид архитектуры, который дополняет React и концепцию однонаправленного потока данных. Facebook использует этот паттерн внутри компании при работе с React.
+
+     Рабочий процесс между компонентами dispatcher, stores и views с отдельными входами и выходами выглядит следующим образом:
 
      ![flux](images/flux.png)
 
@@ -3609,36 +3611,38 @@ You can download the PDF and Epub version of this repository from the latest run
     
 153. ### What is Redux?
 
-     *Redux* is a predictable state container for JavaScript apps based on the *Flux design pattern*. Redux can be used together with React, or with any other view library. It is tiny (about 2kB) and has no dependencies.
+     *Redux* - это контейнер с предсказуемым состоянием для JavaScript-приложений, основанный на паттерне проектирования *Flux*. Redux можно использовать вместе с React или с любой другой библиотекой представлений. Он имеет небольшой размер (около 2 кБ) и не имеет зависимостей.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
 154. ### What are the core principles of Redux?
 
-     Redux follows three fundamental principles:
+     Redux следует трем фундаментальным принципам:
 
-     1. **Single source of truth:** The state of your whole application is stored in an object tree within a single store. The single state tree makes it easier to keep track of changes over time and debug or inspect the application.
-     2. **State is read-only:** The only way to change the state is to emit an action, an object describing what happened. This ensures that neither the views nor the network callbacks will ever write directly to the state.
-     3. **Changes are made with pure functions:** To specify how the state tree is transformed by actions, you write reducers. Reducers are just pure functions that take the previous state and an action as parameters, and return the next state.
+     1. **Единый источник истины:** Состояние всего приложения хранится в дереве объектов в едином хранилище. Единое дерево состояния облегчает отслеживание изменений во времени и отладку или проверку приложения.
+     2. **Состояние доступно только для чтения:** Единственный способ изменить состояние - испустить действие, объект, описывающий произошедшее. Это гарантирует, что ни представления, ни сетевые обратные вызовы никогда не будут писать непосредственно в состояние.
+     3. **Изменения производятся с помощью чистых функций:** Чтобы определить, как дерево состояния преобразуется действиями, вы пишете редьюсеры. Редьюсеры - это чистые функции, которые принимают предыдущее состояние и действие в качестве параметров и возвращают следующее состояние.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
 155. ### What are the downsides of Redux compared to Flux?
 
-     Instead of saying downsides we can say that there are few compromises of using Redux over Flux. Those are as follows:
+     **Каковы недостатки Redux по сравнению с Flux?**
 
-     1. **You will need to learn to avoid mutations:** Flux is un-opinionated about mutating data, but Redux doesn't like mutations and many packages complementary to Redux assume you never mutate the state. You can enforce this with dev-only packages like `redux-immutable-state-invariant`, Immutable.js, or instructing your team to write non-mutating code.
-     2. **You're going to have to carefully pick your packages:** While Flux explicitly doesn't try to solve problems such as undo/redo, persistence, or forms, Redux has extension points such as middleware and store enhancers, and it has spawned a rich ecosystem.
-     3. **There is no nice Flow integration yet:** Flux currently lets you do very impressive static type checks which Redux doesn't support yet.
+     Вместо того чтобы говорить о недостатках, мы можем сказать, что есть несколько компромиссов при использовании Redux по сравнению с Flux. К ним относятся следующие:
+
+     1. **Вам придется научиться избегать мутаций:** Flux не возражает против мутации данных, но Redux не любит мутации, и многие пакеты, дополняющие Redux, предполагают, что вы никогда не будете мутировать состояние. Вы можете обеспечить это с помощью dev-only пакетов, таких как `redux-immutable-state-invariant`, Immutable.js, или поручить своей команде писать не мутирующий код.
+     2. **Вам придется тщательно выбирать пакеты:** В то время как Flux явно не пытается решить такие проблемы, как undo/redo, постоянство или формы, Redux имеет точки расширения, такие как middleware и store enhancers, и породил богатую экосистему.
+     3. **Пока нет хорошей интеграции с Flow:** Flux в настоящее время позволяет делать весьма впечатляющие статические проверки типов, которые Redux пока не поддерживает.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
 156. ### What is the difference between `mapStateToProps()` and `mapDispatchToProps()`?
 
-     `mapStateToProps()` is a utility which helps your component get updated state (which is updated by some other components):
+     `mapStateToProps()` - это утилита, которая помогает вашему компоненту получить обновленное состояние (которое обновляется некоторыми другими компонентами):
 
      ```javascript
      const mapStateToProps = (state) => {
@@ -3648,7 +3652,7 @@ You can download the PDF and Epub version of this repository from the latest run
      }
      ```
 
-     `mapDispatchToProps()` is a utility which will help your component to fire an action event (dispatching action which may cause change of application state):
+     `mapDispatchToProps()` - это утилита, которая поможет вашему компоненту вызвать событие действия (диспетчеризация действия, которое может привести к изменению состояния приложения):
 
      ```javascript
      const mapDispatchToProps = (dispatch) => {
@@ -3660,9 +3664,9 @@ You can download the PDF and Epub version of this repository from the latest run
      }
      ```
      
-     It is recommended to always use the “object shorthand” form for the `mapDispatchToProps`.
+     Рекомендуется всегда использовать "object shorthand" для `mapDispatchToProps`.
         
-     Redux wrap it in another function that looks like (…args) => dispatch(onTodoClick(…args)), and pass that wrapper function as a prop to your component.
+     Redux обертывает ее в другую функцию, которая выглядит как `(...args) => dispatch(onTodoClick(...args))`, и передает эту функцию-обертку как props вашему компоненту.
       
       ```javascript
        const mapDispatchToProps = ({
@@ -3675,14 +3679,18 @@ You can download the PDF and Epub version of this repository from the latest run
     
 157. ### Can I dispatch an action in reducer?
 
-     Dispatching an action within a reducer is an **anti-pattern**. Your reducer should be *without side effects*, simply digesting the action payload and returning a new state object. Adding listeners and dispatching actions within the reducer can lead to chained actions and other side effects.
+     **Допустимо ли отправлять действия из редьюсера?**
+
+     Отправка действия из редьюсера - это **антипаттерн**. Ваш редьюсер должен быть *без побочных эффектов*, просто обрабатывать полезную нагрузку действия и возвращать новый объект состояния. Добавление слушателей и отправка действий внутри редьюсера может привести к цепочке действий и другим побочным эффектам.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
 158. ### How to access Redux store outside a component?
 
-     You just need to export the store from the module where it created with `createStore()`. Also, it shouldn't pollute the global window object.
+     **Как получить доступ к Redux хранилищу вне компонента?**
+
+     Вам нужно просто экспортировать хранилище из модуля, в котором оно было создано с помощью `createStore()`. Также он не должен загрязнять глобальный объект window.
 
      ```javascript
      store = createStore(myReducer)
@@ -3695,26 +3703,34 @@ You can download the PDF and Epub version of this repository from the latest run
     
 159. ### What are the drawbacks of MVW pattern?
 
-     1. DOM manipulation is very expensive which causes applications to behave slow and inefficient.
-     3. Due to circular dependencies, a complicated model was created around models and views.
-     3. Lot of data changes happens for collaborative applications(like Google Docs).
-     4. No way to do undo (travel back in time) easily without adding so much extra code.
+     **Какие недостатки есть у паттерна MVW**
+
+     Каковы недостатки модели MVW?
+
+     1. Манипулирование DOM очень затратное, что приводит к тому, что приложения ведут себя медленно и неэффективно.
+     3. Из-за циклических зависимостей создается сложная модель вокруг моделей и представлений.
+     3. В приложениях для совместной работы (например, Google Docs) происходит много изменений данных.
+     4. Нет возможности легко отменить действие (вернуться назад во времени) без добавления большого количества дополнительного кода.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
 160. ### Are there any similarities between Redux and RxJS?
 
-     These libraries are very different for very different purposes, but there are some vague similarities.
+     **Есть ли сходства между Redux и RxJS?** 
 
-     Redux is a tool for managing state throughout the application. It is usually used as an architecture for UIs. Think of it as an alternative to (half of) Angular. RxJS is a reactive programming library. It is usually used as a tool to accomplish asynchronous tasks in JavaScript. Think of it as an alternative to Promises. Redux uses the Reactive paradigm because the Store is reactive. The Store observes actions from a distance, and changes itself. RxJS also uses the Reactive paradigm, but instead of being an architecture, it gives you basic building blocks, Observables, to accomplish this pattern.
+     Эти библиотеки предназначены для совершенно разных целей, но есть и некоторые нечеткие сходства.
+
+     Redux - это инструмент для управления состоянием во всем приложении. Обычно он используется в качестве архитектуры для пользовательского интерфейса. Рассматривайте его как альтернативу (половину) Angular. RxJS - это библиотека реактивного программирования. Обычно она используется как инструмент для выполнения асинхронных задач в JavaScript. Считайте ее альтернативой Promises. Redux использует парадигму реактивного программирования, потому что магазин является реактивным. Магазин наблюдает за действиями на расстоянии и изменяет себя. RxJS также использует парадигму Reactive, но вместо того, чтобы быть архитектурой, он дает вам основные строительные блоки, Observables, для реализации этого паттерна.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
 161. ### How to dispatch an action on load?
 
-     You can dispatch an action in `componentDidMount()` method and in `render()` method you can verify the data.
+     **Как отправить действие при загрузке?**
+
+     Вы можете отправить действие в методе `componentDidMount()` а потом в методе `render()` проверить данные.
 
      ```javascript
      class App extends Component {
@@ -3743,10 +3759,12 @@ You can download the PDF and Epub version of this repository from the latest run
     
 162. ### How to use `connect()` from React Redux?
 
-     You need to follow two steps to use your store in your container:
+     **Как использовать `connect()` библиотеки React Redux?**
 
-     1. **Use `mapStateToProps()`:** It maps the state variables from your store to the props that you specify.
-     2. **Connect the above props to your container:** The object returned by the `mapStateToProps` function is connected to the container. You can import `connect()` from `react-redux`.
+     Чтобы использовать хранилище в вашем контейнере, необходимо выполнить два шага:
+
+     1. **Используйте `mapStateToProps()`:** Она сопоставляет переменные состояния из вашего хранилища с указанными вами props.
+     2. **Подключите указанные props к вашему контейнеру:** Объект, возвращаемый функцией `mapStateToProps`, подключается к контейнеру. Вы можете импортировать `connect()` из `react-redux`.
 
          ```jsx harmony
          import React from 'react'
@@ -4131,7 +4149,9 @@ You can download the PDF and Epub version of this repository from the latest run
     
 178. ### What is Redux Thunk?
 
-     *Redux Thunk* middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods `dispatch()` and `getState()` as parameters.
+    **Что такое Redux Thunk**
+
+     Мидлвер *Redux Thunk* позволяет писать action creators, которые возвращают функцию вместо действия. Thunk можно использовать для задержки отправки действия или для отправки только при выполнении определенного условия. Внутренняя функция получает в качестве параметров методы хранилища `dispatch()` и `getState()`.
 
 
    **[⬆ Back to Top](#table-of-contents)**
